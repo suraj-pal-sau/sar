@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAR- group of trust</title>
+
+    <link rel="stylesheet" href="index.css">
+  
+    
+</head>
+
+<!--body part start from here-->
+<body>
+    <div class="div1">
+        <h1><img class="img1"src="logo.png" alt="logo" height="100px"width="auto"><!--logo-->
+            <!--Name of company-->
+            <u class="me"style="color:white;"><span style="color:slateblue;font-size:50px;">S</span>uraj <span style="color:slateblue;font-size:50px;">A</span>jay 
+                <span style="color: slateblue;font-size: 50px;">R</span>aj group</u>
+                <!--side too-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="aboutus.html" id="about">About Us</a>
+                    <a href="#" id="projects">Projects</a>
+                    <a href="contact.html" id="contact">Contact</a>
+                  </div>
+    </h1><br>
+    </div>
+    <hr><hr style="width: 70%;">
+     <!--sticky too at starting of content-->
+     <div id="first">
+        <a class="too" href="index.html">Home</a>
+        <a  class="too" href="">Our Services ︾</a>
+        <a class="too" href="newjob.html">New job</a>
+
+        <!--slide show of picture-->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="home cons.jpg" style="width:100%;max-height: 600px;;">
+            <div class="text">SAR construction company</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="home petro.jpg" style="width:100%;max-height: 600px;">
+            <div class="text">SAR petroleum</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="home moters.jpg" style="width:100%;max-height: 600px;">
+            <div class="text">SAR motors</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="home medt.jpg" style="width:100%;max-height: 600px;">
+            <div class="text">SAR medical technology</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="home ent.jpg" style="width:100%;max-height: 600px;">
+            <div class="text">SAR entertainment group</div>
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+          </div>
+          <br>
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+          </div>
+          
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+          }
+          </script>
+          </div><br>
+    <!--some additional-->
+    <div class="container">
+      <div><img src="Cheers.png" alt="Avatar" class="image"></div>
+      <div class="overlay">
+        <div><img src="Cheers.png" alt="Avatar" class="image" ></div>
+      </div>
+    </div>
+
+<!--SAR constrution company-->    
+<div id="cons">
+<a href="construction.html" class="part">SAR construction company</a>
+</div>
+
+<div class="contain" style="float: left;">
+  <img src="bridge.jpg" alt="Avatar" class="img" >
+     <div class="on">↬We are constructing bridges & roades</div>
+  <div class="middle" >
+  <a href="MP.html" class="txt">Learn more ↠</a>
+  </div>
+  </div>
+
+  <div class="contain" style="float: left;">
+    <img src="railway.jpg" alt="Avatar" class="img">
+       <div class="on">↬We are also working with railways</div>
+    <div class="middle" >
+    <a href="MP.html" class="txt">Learn more ↠</a>
+    </div>
+    </div>
+
+    <div class="contain" style="float: left;">
+      <img src="port.jpg" alt="Avatar" class="img" >
+         <div class="on">↬We are constructing ports</div>
+      <div class="middle" >
+      <a href="MP.html" class="txt">Learn more ↠</a>
+      </div>
+      </div>
+
+      <div class="contain" style="float: left;">
+        <img src="power plant.jpg" alt="Avatar" class="img" >
+           <div class="on">↬We are constructing power plants</div>
+        <div class="middle" >
+        <a href="MP.html" class="txt">Learn more ↠</a>
+        </div>
+        </div>
+
+  <!--SAR petroleum company-->
+  <div style="background-color: burlywood;display: inline-block;height:100%;">
+    <a href="petroleum.html" class="part1">SAR petroleum company</a>
+      
+<div class="fuel1">
+  <h1 class="box">🏎Fuel Services🏎</h1>
+  <p class="alag">SAR follows<br> world class processes <br>
+    and Automation system.</p>
+</div>
+
+<div class="fuel">
+  <h1 class="box">🦽Lubricants🦽</h1>
+  <p class="alag">SAR lubricants<br> is premium class, <br>
+    next generation engine oil.</p>
+</div>
+
+<div class="fuel">
+  <h1 class="box">⚓Trans-Connect⚓</h1>
+  <p class="alag">We provide <br>
+    fully integrated and automated card transaction<br> system across the network.</p>
+</div>
+
+<div class="fuel1">
+  <h1 class="box">🛺Auto LPG🛺</h1>
+  <p class="alag">Auto LPG is <br>
+    the green fuel sold in <br>SAR petroleum sector.</p>
+</div>
+
+<div class="fuel1">
+  <h1 class="box">✈Aviation✈</h1>
+  <p class="alag">We supply aviation fuel <br>
+    to both <br>Scheduled Airlines and Business Jet segment.</p>
+</div>
+
+<div class="fuel">
+  <h1 class="box">🚏SAR Gas🚏</h1>
+  <p class="alag">Our Packed LPG products<br>
+     serve diverse needs of <br>households and establishments.</p>
+</div></div>
+<!--SAR motors-->
+<div style="background-color: #96D4D4;display: inline-block;height:100%;">
+  <div><a href="Motors.html" class="part2">SAR motors</a></div>
+
+  <div class="tech">
+    <img src="motors tech.gif" class="img2">
+    <iframe src="https://www.youtube.com/embed/4GSUXy76qGc" class="if"></iframe>
+  </div>
+
+  <div class="tech">
+    <iframe src="https://www.youtube.com/embed/vz2rAgXjkCA" class="if"></iframe>
+    <img src="motors confer.gif" class="img2">
+  </div>
+</div>
+
+<!--SAR medical-->
+<div style="background-color: #e9e9e9;display: inline-block;height:100%;width: 100%;">
+  <div><a href="Medical.html" class="part3">SAR medical technology</a></div>
+
+<div class="med">
+  <h3>↣SAR Medical provides solutions to doctors, patients and nurses.</h3>
+  <h3>↣Being a leading Medical Devices provider in almost every segment, what sets it apart is its constant focus on innovation.</h3>
+  <h3>↣It offers an extensive range of high technology medical and surgical equipment, devices and services.</h3>
+  <h3>↣The business is organized into franchises to focus on target customers and better service.
+  </h3>
+</div>
+
+<div class="cal">
+  <h2>Surgery</h2>
+  <p>we have built a strong niche <br>in the robotic ortho surgery space.</p>
+</div>
+
+<div class="cal">
+  <h2>Cardiovascular Disease<br> & specialty</h2>
+  <p>we are all care about you.</p>
+</div>
+
+<div class="cal">
+  <h2>Orthopaedics</h2>
+  <p>A global leader in <br>joint replacement with <br>a comprehensive portfolio</p>
+</div>
+   </div>
+
+   <!--SAR entertainment group-->
+   <div style="background-color: #282A35;display: inline-block;height:100%;width: 100%;">
+    <div><a href="entertainment.html" class="part4">SAR entertainment group</a></div>
+
+    <img src="Our.png" class="img3">
+
+    <div class="ent">
+      <h2>SAR Parks</h2>
+      <p class="nt">everything from toys to apparel, 
+        <br>and books to video games.</p>
+        <h1>🏞🏜🏞</h1>
+    </div>
+
+    <div class="ent">
+      <h2>SAR Media & <br> Entertainment </h2>
+      <p class="nt">SAR Media & Entertainment Distribution 
+        <br>aligns technology, media distribution and advertising.</p>
+    </div>
+
+    <div class="ent">
+      <h2>SAR Studios Content</h2>
+      <p class="nt">The Studios Content group encompasses 
+        <br>a collection of world-class entertainment studios 
+        <br>that produce high-quality cinematic storytelling.</p>
+    </div>
+
+    <div class="ent">
+      <h2>SAR Sports</h2>
+      <p class="nt">SAR Sports group acquires 
+        <br>and produces live sports programms.</p>
+        <h1>🏈🏈</h1>
+    </div>
+  </div>  
+
+  <!--Padder part-->
+  <div class="padder">
+    <div class="pa">
+      <h2 style="border-bottom: 2px solid rgb(250,135,135);padding: 20px;">Address</h2>
+    <p style="padding: 5px;line-height: 25px;">SAR Goup Private Limited<br>
+      Koi Nagar,Garh road,<br>
+      City(Direction)<br>
+      District - PIN Code</p>
+      </div>
+    <div class="pa">
+      <h2 style="border-bottom: 2px solid rgb(250,135,135);padding: 20px;">Explore Us</h2>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>About SAR</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Investor</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Carrers</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Media Room</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Business Area</a>
+    </div>
+    <hr width="80%">
+    <div class="padder"><p style="margin-left: 10%;">Copyright©2021 SAR.All rights reserved.</p></div>
+
+<!--code for upward button-->
+<button onclick="up()" id="upward" title="Go upward">⇪</button>
+
+<script>
+  var es = document.getElementById("upward");
+  
+  window.onscroll = function() {scroll()};
+  
+  function scroll() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      es.style.display = "block";
+    } else {
+      es.style.display = "none";
+    }
+  }
+  
+  function up() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  
+
+</body>
+</html>

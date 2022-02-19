@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAR - entertainment group</title>
+
+    <style>
+      body{
+        background-color: rgb(250, 208, 214);
+      }
+        .div1 {
+    padding: 1px;
+    background-image: url('head\ wallpaper\ 2.jpg');
+  }
+  
+        .img1 {
+    float: left;
+    height: 100px;
+    width: 200px;
+  }
+
+
+  .me {
+    height: 90px;
+    margin-left: 50px;
+  }
+
+  u {
+    animation: me 5s infinite 0 1000000000000 reverse fill-mode;
+  }
+
+  u:hover {
+    height: 200px;
+  }
+
+  @keyframes me {
+    from {
+      right: 0px
+    }
+
+    to {
+      left: 300px
+    }
+  }
+
+
+  /*style for side menu in heading part*/
+  #mySidenav a {
+    position: absolute;
+    right: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    height: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px 0 0 2px;
+    opacity: 0.3;
+  }
+
+  #mySidenav a:hover {
+    right: 0;
+    opacity: 1;
+  }
+
+  #about {
+    top: 10px;
+    background-color: #04AA6D;
+    text-align: right;
+  }
+
+
+  #projects {
+    top: 50px;
+    background-color: #f44336;
+    text-align: right;
+    display: inline;
+  }
+
+  #contact {
+    top: 90px;
+    background-color: rgb(85, 82, 82);
+    text-align: right;
+  }
+
+  #first {
+    text-align: center;
+    background-color: #fdc070 !important;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border: 3px solid #ff9100; 
+    background-image: url('https://cdn.wallpapersafari.com/13/95/hdRfnU.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: auto;
+  }
+
+  .too {
+    padding: 15px;
+    font-size: 20px;
+    opacity: 0.7;
+    color: rgb(238, 183, 110);
+    position:sticky;
+    text-decoration: none;
+  }
+
+  .too:hover {
+    background-color: aliceblue;
+    border-radius: 5px;
+    opacity: 1;
+    color: cornflowerblue;
+    border-bottom: 4px solid rgb(94, 255, 0);
+  }
+  .card{
+    width: 28%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 10px;
+    margin-left: 3%;
+    margin-top: 13px;
+    float: left;
+    transition: ease-in;
+    position: relative;
+  }
+  .card2{
+    width: 28%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 13px;
+    transition: ease-in;
+    position: relative;
+  }
+  .card1{
+    width: 100%;
+    max-height: 200px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
+  }
+  .card2:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
+  }
+  /*Padder part*/
+.padder{
+  background-color: #12383d;
+  color:cornsilk;
+  display: inline-block;
+  height:100%;
+  width: 100%;
+}
+
+.pa{
+  width: 30%;
+  margin-left: 10%;
+  padding: 10px;
+  float: left;
+}
+.aya{
+  width: 40%;
+  text-decoration: none;
+  color: aliceblue;
+  float: left;
+  padding: 5px;
+}
+
+.aya:hover{
+  color: bisque;
+}
+
+/* style for upward button*/
+#upward {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  opacity: 0.5;
+  background-color: red;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  transform: scale(0.6);
+}
+
+#upward:hover {
+  background-color: #555;
+  transform:scale(1.2);
+  opacity: 1;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1><img class="img1"src="logo.png" alt="logo" height="100px"width="auto"><!--logo-->
+            <!--Name of company-->
+            <u class="me"style="color:white;"><span style="color:slateblue;font-size:50px;">S</span>uraj <span style="color:slateblue;font-size:50px;">A</span>jay 
+                <span style="color: slateblue;font-size: 50px;">R</span>aj group</u>
+                <!--side too-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="aboutus.html" id="about">About Us</a>
+                    <a href="#" id="projects">Projects</a>
+                    <a href="contact.html" id="contact">Contact</a>
+                  </div>
+    </h1><br>
+    </div>
+    <hr><hr style="width: 70%;">
+    <!--sticky too at starting of content-->
+    <div id="first">
+        <a class="too" href="index.html">Home</a>
+        <a  class="too" href="">Our Services ︾</a>
+        <a class="too" href="newjob.html">New job</a>
+        </div>
+        <div style="position: relative;">
+           <img src="https://cdn.wallpapersafari.com/13/95/hdRfnU.jpg" style="width: 100%;">
+        <div style="position: absolute;top: 10px;left: 20px;"> 
+        <p style="font-size: 30px;color: antiquewhite;padding: 10px; border-right: 3px solid pink;border-bottom: 1.5px solid pink;border-radius: 15px;">Entertainment</p></div>
+          </div>
+
+      <!--parks-->
+          <div>
+            <!--title-->
+            <div>
+              <h1 style="text-align: center;">Disney Parks, Experiences and<br> Products</h1>
+<p style="text-align: center; margin-left: 18%;margin-right: 18%;color: rgb(68, 61, 61);">Disney Parks, Experiences and Products is the global hub that brings Disney’s stories, characters, and franchises to life through theme parks and resorts, cruise and vacation experiences, and consumer products—everything from toys to apparel, and books to video games.</p>
+<p style="text-align: center;margin-left: 18%;margin-right: 18%;color: rgb(68, 61, 61);">For the Disney Parks, Experiences and Products press site, <a href="https://dpep.disney.com/">click here</a>.</p>
+            </div>
+
+            <div class="card">
+              <a href="https://disneyland.disney.go.com/">
+                      <img src="https://thewaltdisneycompany.com/app/uploads/Disneyland-Logo.jpg"
+                           alt="Disneyland-Logo" class="card1">
+                  <!-- .card-image -->
+              </a></div>
+
+              <div class="card">
+                <a href="https://disneyworld.disney.go.com/">
+                        <img src="https://thewaltdisneycompany.com/app/uploads/2020/05/Walt-Disney-World.png"
+                             alt="Disneyland-Logo" class="card1">
+                    <!-- .card-image -->          
+                </a></div>
+
+                <div class="card">
+                  <a href="https://www.shanghaidisneyresort.com/en">
+                          <img src="https://thewaltdisneycompany.com/app/uploads/Shanghai-Disney-Resort-Logo1.jpg"
+                               alt="Disneyland-Logo" class="card1">
+                      <!-- .card-image -->          
+                  </a></div>
+
+                  <div class="card">
+                    <a href="http://www.disneylandparis.com/en-us/">
+                            <img src="https://thewaltdisneycompany.com/app/uploads/2019/01/hd14180-600x170.png"
+                                 alt="Disneyland-Logo" class="card1">
+                        <!-- .card-image -->
+                    </a></div>
+      
+                    <div class="card">
+                      <a href="http://www.tokyodisneyresort.jp/en/">
+                              <img src="https://thewaltdisneycompany.com/app/uploads/Tokyo-Disney-Resort-Logo.jpg"
+                                   alt="Disneyland-Logo" class="card1">
+                          <!-- .card-image -->          
+                      </a></div>
+      
+                      <div class="card">
+                        <a href="https://www.hongkongdisneyland.com/">
+                                <img src="https://thewaltdisneycompany.com/app/uploads/Hong-Kong-Disneyland-Logo.jpg"
+                                     alt="Disneyland-Logo" class="card1">
+                            <!-- .card-image -->          
+                        </a></div>
+
+                        <div class="card">
+                          <a href="https://disneycruise.disney.go.com/">
+                                  <img src="https://thewaltdisneycompany.com/app/uploads/Disney-Cruise-Line-Logo.jpg"
+                                       alt="Disneyland-Logo" class="card1">
+                              <!-- .card-image -->          
+                          </a></div>
+                          
+                        <div class="card">
+                          <a href="https://disneyvacationclub.disney.go.com/">
+                                  <img src="https://thewaltdisneycompany.com/app/uploads/2020/05/Disney-Vacation-Club.png"
+                                       alt="Disneyland-Logo" class="card1">
+                              <!-- .card-image -->          
+                          </a></div>
+                          
+                        <div class="card">
+                          <a href="https://resorts.disney.go.com/aulani-hawaii-resort/">
+                                  <img src="https://thewaltdisneycompany.com/app/uploads/Aulani-Logo.jpg"
+                                       alt="Disneyland-Logo" class="card1">
+                              <!-- .card-image -->          
+                          </a></div>
+                          
+                        <div class="card">
+                          <a href="https://www.adventuresbydisney.com/">
+                                  <img src="https://thewaltdisneycompany.com/app/uploads/2020/05/AdventuresbyDisney.png"
+                                       alt="Disneyland-Logo" class="card1">
+                              <!-- .card-image -->          
+                          </a></div>
+                          
+                        <div class="card">
+                          <a href="http://www.aboutdisneyparks.com/about/around-the-world/walt-disney-imagineering">
+                                  <img src="https://thewaltdisneycompany.com/app/uploads/2019/12/WDI_Logo-600x378.png"
+                                       alt="Disneyland-Logo" class="card1">
+                              <!-- .card-image -->          
+                          </a></div>
+                          
+                        <div class="card">
+                          <a href="http://books.disney.com/">
+                                  <img src="https://thewaltdisneycompany.com/app/uploads/2020/05/Disney-Publishing-Worldwide-041.png"
+                                       alt="Disneyland-Logo" class="card1">
+                              <!-- .card-image -->          
+                          </a></div>
+                          
+                        <div class="card" style="margin-right: 37%;">
+                          <a href="http://www.shopdisney.com/">
+                                  <img src="https://thewaltdisneycompany.com/app/uploads/twdc_ds_logo.png"
+                                       alt="Disneyland-Logo" class="card1">
+                              <!-- .card-image -->          
+                          </a></div>
+          </div></p><hr style="width: 40%;margin-top: 1240px;">
+
+          <!--title-->
+          <div>
+            <h1 style="text-align: center;">Disney Media & Entertainment<br> Distribution</h1>
+<p style="text-align: center; margin-left: 18%;margin-right: 18%;color: rgb(68, 61, 61);">Comprised of the Company’s international business units and various 
+  direct-to-consumer streaming services, Disney Media & Entertainment Distribution (DMED) aligns technology, media distribution and advertising sales 
+  into a single business segment to create and deliver personalized entertainment experiences to consumers around the world.</p>
+<p style="text-align: center;margin-left: 18%;margin-right: 18%;color: rgb(68, 61, 61);">For the DMED press site, <a href="https://dmedmedia.disney.com/">click here</a>.</p>
+          </div>
+
+          <div class="card">
+            <a href="http://disneyplus.com/">
+                    <img src="https://thewaltdisneycompany.com/app/uploads/2020/11/D_Blue-Logo.png"
+                         alt="Disneyland-Logo" class="card1">
+                <!-- .card-image -->
+            </a></div>
+
+            <div class="card">
+              <a href="https://plus.espn.com/">
+                      <img src="https://thewaltdisneycompany.com/app/uploads/2020/06/ESPN_PLUS_LOGO-1.png"
+                           alt="Disneyland-Logo" class="card1">
+                  <!-- .card-image -->          
+              </a></div>
+
+              <div class="card">
+                <a href="https://www.hulu.com/">
+                        <img src="https://thewaltdisneycompany.com/app/uploads/2019/03/hulu-logo-600x319.png"
+                             alt="Disneyland-Logo" class="card1">
+                    <!-- .card-image -->          
+                </a></div>
+
+                <div class="card">
+                  <a href="https://us.hotstar.com/">
+                          <img src="https://thewaltdisneycompany.com/app/uploads/2019/03/Hotstar-reverse-logo.jpg"
+                               alt="Disneyland-Logo" class="card1">
+                      <!-- .card-image -->
+                  </a></div>
+    
+                  <div class="card">
+                    <a href="https://music.disney.com/">
+                            <img src="https://thewaltdisneycompany.com/app/uploads/2020/05/Disney-Music-Group1.png"
+                                 alt="Disneyland-Logo" class="card1">
+                        <!-- .card-image -->          
+                    </a></div><hr style="width: 40%;margin-top: 550px;">
+
+
+                   <!--title-->   
+                  <div><h1 style="text-align: center;">Studios Content</h1>
+<p style="text-align: center; margin-left: 18%;margin-right: 18%;color: rgb(68, 61, 61);">Disney Parks, Experiences and Products is the global hub that brings Disney’s stories, characters, and franchises to life through theme parks and resorts, cruise and vacation experiences, and consumer products—everything from toys to apparel, and books to video games.</p>
+<p style="text-align: center;margin-left: 18%;margin-right: 18%;color: rgb(68, 61, 61);">For the Disney Parks, Experiences and Products press site, <a href="https://dpep.disney.com/">click here</a>.</p>
+            </div>
+
+            <div class="card">
+              <a href="http://waltdisneystudios.com/">
+                      <img src="https://thewaltdisneycompany.com/app/uploads/2020/05/The-Walt-Disney-Studios1.png"
+                           alt="Disneyland-Logo" class="card1">
+                  <!-- .card-image -->
+              </a></div>
+
+              <div class="card">
+                <a href="http://www.disneyanimation.com/">
+                        <img src="https://thewaltdisneycompany.com/app/uploads/Walt-Disney-Animation-Studios-Logo.jpg"
+                             alt="Disneyland-Logo" class="card1">
+                    <!-- .card-image -->          
+                </a></div>
+
+                <div class="card">
+                  <a href="http://www.pixar.com/">
+                          <img src="https://thewaltdisneycompany.com/app/uploads/2020/05/Pixar-Animation-Studios1.png"
+                               alt="Disneyland-Logo" class="card1">
+                      <!-- .card-image -->          
+                  </a></div>
+
+                  <div class="card">
+                    <a href="http://marvel.com/movies">
+                            <img src="https://thewaltdisneycompany.com/app/uploads/MARVEL_STUDIOS_LOGO.jpg"
+                                 alt="Disneyland-Logo" class="card1">
+                        <!-- .card-image -->
+                    </a></div>
+      
+                    <div class="card">
+                      <a href="http://lucasfilm.com/">
+                              <img src="https://thewaltdisneycompany.com/app/uploads/2020/05/Lucasfilm1.png"
+                                   alt="Disneyland-Logo" class="card1">
+                          <!-- .card-image -->          
+                      </a></div>
+      
+                      <div class="card">
+                        <a href="">
+                                <img src="https://thewaltdisneycompany.com/app/uploads/2020/05/Disney-Theatrical-Group1.png"
+                                     alt="Disneyland-Logo" class="card1">
+                            <!-- .card-image -->          
+                        </a></div>
+
+                        <div class="card">
+                          <a href="https://www.20thcenturystudios.com/">
+                                  <img src="https://thewaltdisneycompany.com/app/uploads/2020/01/20th_century_studios-600x498.png"
+                                       alt="Disneyland-Logo" class="card1">
+                              <!-- .card-image -->          
+                          </a></div>
+
+                          <div class="card">
+                            <a href="https://www.searchlightpictures.com/">
+                                    <img src="https://thewaltdisneycompany.com/app/uploads/2020/01/SLP-logo-600x229.png"
+                                         alt="Disneyland-Logo" class="card1">
+                                <!-- .card-image -->          
+                            </a></div><hr style="width: 40%;margin-top: 780px;">
+
+                        <!--title-->   
+                  <div><h1 style="text-align: center;">ESPN and Sports Content</h1>
+                    <p style="text-align: center; margin-left: 18%;margin-right: 18%;color: rgb(68, 61, 61);">The ESPN and Sports Content group acquires and produces ESPN’s live sports programming, as well as sports news and original and non-scripted sports-related content, for The Walt Disney Company’s cable channels, ESPN+, and ABC.</p>
+                    <p style="text-align: center;margin-left: 18%;margin-right: 18%;color: rgb(68, 61, 61);">For the ESPN press site, <a href="https://espnmediazone.com/us/">click here</a>.</p>
+                                </div>
+                    
+                                <div class="card2">
+                                  <a href="http://espn.go.com/">
+                                          <img src="https://thewaltdisneycompany.com/app/uploads/ESPN-Logo.jpg"
+                                               alt="Disneyland-Logo" class="card1">
+                                      <!-- .card-image -->
+                                  </a></div><hr style="width: 40%;margin-top: 50px;">
+        <!--Padder part-->
+  <div class="padder">
+    <div class="pa">
+      <h2 style="border-bottom: 2px solid rgb(250,135,135);padding: 20px;">Address</h2>
+    <p style="padding: 5px;line-height: 25px;">SAR Goup Private Limited<br>
+      Koi Nagar,Garh road,<br>
+      City(Direction)<br>
+      District - PIN Code</p>
+      </div>
+    <div class="pa">
+      <h2 style="border-bottom: 2px solid rgb(250,135,135);padding: 20px;">Explore Us</h2>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>About SAR</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Investor</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Carrers</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Media Room</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Business Area</a>
+    </div>
+    <hr width="80%">
+    <div class="padder"><p style="margin-left: 10%;">Copyright©2021 SAR.All rights reserved.</p></div>
+
+
+     <!--code for upward button-->
+<button onclick="up()" id="upward" title="Go upward">⇪</button>
+
+<script>
+  var es = document.getElementById("upward");
+  
+  window.onscroll = function() {scroll()};
+  
+  function scroll() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      es.style.display = "block";
+    } else {
+      es.style.display = "none";
+    }
+  }
+  
+  function up() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>                            
+</body>
+</html>

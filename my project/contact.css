@@ -1,0 +1,59 @@
+body{
+    background-color: cornsilk;
+}
+      .contactsar h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 50px;
+           background-color: blue;
+           text-align: center;
+color: aquamarine;
+       } 
+       
+       .conenter h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 50px;
+           background-color: blue;
+           text-align: center;
+           color: rgb(250, 216, 165);
+    
+ } 
+       
+       .conconstruct h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 50px;
+           background-color: blue;
+           text-align: center;
+           color: rgb(152, 240, 243);
+       } 
+       
+       .conmedical h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 50px;
+           background-color: blue;
+           text-align: center;
+           color: rgb(245, 35, 77);
+       }
+       .conmotors h1{
+           font-family: Georgia, 'Times New Roman', Times, serif;
+           font-size: 50px;
+           background-color: blue;
+           text-align: center;
+           color: darkgray;
+       } 
+       .media h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 50px;
+        background-color: blue;
+        text-align: center;
+        color: rgb(144, 236, 236);
+       }
+   p{
+       font-size: 25px;
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+       font-style: normal;
+       background-color: cornsilk;
+   } 
+   p a{
+       color: blue;
+       text-decoration: none ;
+   }  

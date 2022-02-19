@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      body {
+    background-image: linear-gradient(to bottom,green ,green 30%, orange 30%, orange);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.div1 {
+    padding: 1px;
+    background-image: url('head\ wallpaper\ 2.jpg');
+  }
+
+  .img1 {
+    float: left;
+    height: 100px;
+    width: 200px;
+  }
+
+
+  .me {
+    height: 90px;
+    margin-left: 50px;
+  }
+
+  u {
+    animation: me 5s infinite 0 1000000000000 reverse fill-mode;
+  }
+
+  u:hover {
+    height: 200px;
+  }
+
+  @keyframes me {
+    from {
+      right: 0px
+    }
+
+    to {
+      left: 300px
+    }
+  }
+
+
+  /*style for side menu in heading part*/
+  #mySidenav a {
+    position: absolute;
+    right: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    height: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px 0 0 2px;
+    opacity: 0.3;
+  }
+
+  #mySidenav a:hover {
+    right: 0;
+    opacity: 1;
+  }
+
+  #about {
+    top: 10px;
+    background-color: #04AA6D;
+    text-align: right;
+  }
+
+
+  #projects {
+    top: 50px;
+    background-color: #f44336;
+    text-align: right;
+    display: inline;
+  }
+
+  #contact {
+    top: 90px;
+    background-color: #555;
+    text-align: right;
+  }
+
+  #first {
+    text-align: center;
+    background-color: #00e1ff !important;
+    width:50%;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  .too {
+    padding: 15px;
+    font-size: 20px;
+    opacity: 0.7;
+    color: rgb(248, 0, 248);
+    position:sticky;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+  .too:hover {
+    background-color: aliceblue;
+    opacity: 1;
+    color: cornflowerblue;
+  }
+
+  /*main part*/
+  #main{
+    background-image: url('MP\ bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 75%; 
+    background-size: cover;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-left: 12%;
+    margin-right: auto;
+    border: 10px solid orange;
+  }
+
+  .ing{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.637);
+    padding: 12px;
+    width: fit-content;
+  }
+
+  .in{
+    margin-right: 20%;
+    padding: 25px;
+    color: rgb(0, 0, 0);
+  }
+
+  /* style for upward button*/
+#upward {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  opacity: 0.5;
+  background-color: red;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  transform: scale(0.6);
+}
+
+#upward:hover {
+  background-color: #555;
+  transform:scale(1.2);
+  opacity: 1;
+}
+
+/*Padder part*/
+.padder{
+  background-color: #202c6e;
+  color:cornsilk;
+  display: inline-block;
+  height:100%;
+  width: 100%;
+}
+
+.pa{
+  width: 30%;
+  margin-left: 10%;
+  padding: 10px;
+  float: left;
+}
+.aya{
+  width: 40%;
+  text-decoration: none;
+  color: aliceblue;
+  float: left;
+  padding: 5px;
+}
+
+.aya:hover{
+  color: bisque;
+}
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+        <h1><img class="img1"src="logo.png" alt="logo" height="100px"width="auto"><!--logo-->
+            <!--Name of company-->
+            <u class="me"style="color:white;"><span style="color:slateblue;font-size:50px;">S</span>uraj <span style="color:slateblue;font-size:50px;">A</span>jay 
+                <span style="color: slateblue;font-size: 50px;">R</span>aj group</u>
+                <!--side too-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="aboutus.html" id="about">Abot Us</a>
+                    <a href="#" id="projects">Projects</a>
+                    <a href="contact.html" id="contact">Contact</a>
+                  </div>
+    </h1><br>
+    </div>
+    <hr><hr style="width: 70%;">
+     <!--sticky too at starting of content-->
+     <div id="first">
+        <a class="too" href="index.html">Home</a>
+        <a class="too" href="">Our Services ︾</a>
+        <a class="too" href="newjob.html">New job</a>
+     </div>
+<!--main part-->
+<div id="main">
+     <div class="in">
+      <h2 class="ing">Highways, Roads & Bridges</h2>
+      <ul>
+        <li>Ramban Banihal Road Project, J&K (Ongoing)</li>
+        <li>Coastal Road Project, Mumbai (Ongoing)</li>
+        <li>NH-34 - Bahrampore – Farakka Highway, West Bengal (Ongoing)</li>
+        <li>NH-34 - Farakka - Raiganj Highway, West Bengal (Ongoing)</li>
+        <li>Elevated Road from Park Circus to E.M. Bypass, Kolkata, West Bengal (2015)</li>
+        <li>NH-3 MP/Maharashtra Border - Dhule Highway, Maharashtra (2012)</li>
+        <li>Mughal Road, Jammu & Kashmir (2012)</li>
+        <li>Chennai Bypass, Tamil Nadu (2011)</li>
+        <li>NH - 28 - Lucknow Muzaffarpur Highway, Uttar Pradesh (2011)</li>
+        <li>Delhi Faridabad Elevated Expressway (2010)</li>
+        <li>Bandra-Worli Sea Link, Maharashtra (2009)</li>
+        <li>Allahabad Bypass, Uttar Pradesh (2009)</li>
+        <li>East-West Corridor Project, Rajasthan (2008)</li>
+        <li>Naini Cable Stayed Bridge, Uttar Pradesh (2004)</li>
+        <li>Mumbai-Pune Expressway, Maharashtra (2002)</li>
+        <li>Wellington Bridge, Cochin, Kerala (1998)</li>
+        <li>Varanasi Bridge, Uttar Pradesh (1997)</li>
+      </ul>
+    </div> 
+
+    <div class="in">
+      <h2 class="ing">Railway </h2>
+      <ul>
+        <li>Bogibeel Rail-cum-Road Bridge, Assam (2018)</li>
+        <li>Pir Panjal Tunnel, Jammu & Kashmir (2012)</li>
+        <li>Munger Rail-cum-Road Bridge, Bihar (2007)</li>
+        <li>Godavari Railway Bridge, Andhra Pradesh (1988)</li>
+        <li>Ganga Bridge at Mokameh, Bihar (1959)</li>
+        <li>Bhorghat Tunnel, Maharashtra (1928)</li>
+      </ul>
+    </div>
+
+    <div class="in">
+      <h2 class="ing">Ports & Harbours</h2>
+      <ul>
+        <li>DGNP Dry Dock and Wharves, Mumbai (2019)</li>
+        <li>Ennore Port Project (2001)</li>
+        <li>Tanker Terminal and Fertiliser Berth, Cochin, Kerala (1984)</li>
+        <li>Haldia Docks Project, West Bengal (1977)</li>
+      </ul>
+    </div>
+
+    <div class="in">
+      <h2 class="ing">Power Plants </h2>
+      <ul>
+        <li>BARC - Reactor, Lab & Spent Fuel Building, Maharashtra (Ongoing)</li>
+        <li>IGCAR Kalpakkam – FRFCF, Tamil Nadu (Ongoing)</li>
+        <li>Roopur Nuclear Power Project, Bangladesh (Ongoing)</li>
+        <li>Kudankulam Nuclear Power Project, Units 1&2, Tamil Nadu (2010)</li>
+        <li>Rajasthan Atomic Power Project, Units 5&6, Rajasthan (2008)</li>
+        <li>Rajasthan Atomic Power Project, Units 3&4, Rajasthan (2000)</li>
+        <li>Kakrapar Atomic Power Project, Gujarat (1990)</li>
+        <li>Narora Atomic Power Project, Uttar Pradesh (1984)</li>
+        <li>Rajasthan Atomic Power Project, Units 1&2, Rajasthan (1971)</li>
+      </ul>
+    </div>
+    </div>
+
+    <!--Padder part-->
+  <div class="padder">
+    <div class="pa">
+      <h2 style="border-bottom: 2px solid rgb(250,135,135);padding: 20px;">Address</h2>
+    <p style="padding: 5px;line-height: 25px;">SAR Goup Private Limited<br>
+      Koi Nagar,Garh road,<br>
+      City(Direction)<br>
+      District - PIN Code</p>
+      </div>
+    <div class="pa">
+      <h2 style="border-bottom: 2px solid rgb(250,135,135);padding: 20px;">Explore Us</h2>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>About SAR</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Investor</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Carrers</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Media Room</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Business Area</a>
+    </div>
+    <hr width="80%">
+    <div class="padder"><p style="margin-left: 10%;">Copyright©2021 SAR.All rights reserved.</p></div>
+
+    
+     <!--code for upward button-->
+<button onclick="up()" id="upward" title="Go upward">⇪</button>
+
+<script>
+  var es = document.getElementById("upward");
+  
+  window.onscroll = function() {scroll()};
+  
+  function scroll() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      es.style.display = "block";
+    } else {
+      es.style.display = "none";
+    }
+  }
+  
+  function up() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SAR - Group of trust</title>
+
+    <style>
+      body{
+      background-image: linear-gradient(to bottom,red ,red 25%, green 85%, green);
+      background-size: cover;
+      background-repeat: repeat;
+      }
+        
+  .div1 {
+    padding: 1px;
+    background-image: url('head\ wallpaper\ 2.jpg');
+  }
+
+  .img1 {
+    float: left;
+    height: 100px;
+    width: 200px;
+  }
+
+
+  .me {
+    height: 90px;
+    margin-left: 50px;
+  }
+
+  u {
+    animation: me 5s infinite 0 1000000000000 reverse fill-mode;
+  }
+
+  u:hover {
+    height: 200px;
+  }
+
+  @keyframes me {
+    from {
+      right: 0px
+    }
+
+    to {
+      left: 300px
+    }
+  }
+
+
+  /*style for side menu in heading part*/
+  #mySidenav a {
+    position: absolute;
+    right: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    height: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px 0 0 2px;
+    opacity: 0.3;
+  }
+
+  #mySidenav a:hover {
+    right: 0;
+    opacity: 1;
+  }
+
+  #about {
+    top: 10px;
+    background-color: #04AA6D;
+    text-align: right;
+  }
+
+
+  #projects {
+    top: 50px;
+    background-color: #f44336;
+    text-align: right;
+    display: inline;
+  }
+
+  #contact {
+    top: 90px;
+    background-color: #555;
+    text-align: right;
+  }
+
+  #first {
+    text-align: center;
+    background-color: #282A35 !important;
+    width:fit-content;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+  }
+
+  .too {
+    padding: 15px;
+    font-size: 20px;
+    opacity: 0.7;
+    color: darkgray;
+    position:sticky;
+    text-decoration: none;
+  }
+
+  .too:hover {
+    background-color: aliceblue;
+    border-radius: 5px;
+    opacity: 1;
+    color: cornflowerblue;
+    border-bottom: 4px solid green;
+  }
+
+  .bhi{
+    text-align: center;
+    border-left: 4px solid green;
+    border-right: 4px solid green;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(49, 117, 49, 0.411);
+    border-radius: 5px;
+    color: rgb(34, 17, 17);
+  }
+  .data{
+    text-align: center;
+    border-top: 4px solid rgb(13, 27, 13);
+    border-bottom: 4px solid rgb(13, 27, 13);
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(13, 27, 13, 0.411);
+    border-radius: 5px;
+    color: orange;
+  }
+
+  #main{
+    background-image: url('https://images.pexels.com/photos/295771/pexels-photo-295771.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 75%; 
+    background-size: cover;
+    background-size: 100% 100%;
+    display: inline-block;
+    margin-left: 12%;
+    margin-right: auto;
+    border: 10px solid orange;
+  }
+
+  /*main*/
+  .Btn {
+  background-color: rgb(86, 128, 128);
+  color: aliceblue;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 20%;
+  margin-left: 10%;
+}
+
+.Btn:hover {
+  background-color: #777;
+}
+
+.same {
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+.pic{
+  width: 25%;
+  float: left;
+  height: 170px;
+}
+.comment{
+  width: 75%;
+  float: left;
+  height: 170px;
+}
+.part{
+  padding: 10px;
+}
+
+/*Padder part*/
+.padder{
+  background-color: #12383d;
+  color:cornsilk;
+  display: inline-block;
+  height:100%;
+  width: 100%;
+}
+
+.pa{
+  width: 30%;
+  margin-left: 10%;
+  padding: 10px;
+  float: left;
+}
+.aya{
+  width: 40%;
+  text-decoration: none;
+  color: aliceblue;
+  float: left;
+  padding: 5px;
+}
+
+.aya:hover{
+  color: bisque;
+}
+
+/* style for upward button*/
+#upward {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  opacity: 0.5;
+  background-color: red;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  transform: scale(0.6);
+}
+
+#upward:hover {
+  background-color: #555;
+  transform:scale(1.2);
+  opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1><img class="img1"src="logo.png" alt="logo" height="100px"width="auto"><!--logo-->
+            <!--Name of company-->
+            <u class="me"style="color:white;"><span style="color:slateblue;font-size:50px;">S</span>uraj <span style="color:slateblue;font-size:50px;">A</span>jay 
+                <span style="color: slateblue;font-size: 50px;">R</span>aj group</u>
+                <!--side too-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="aboutus.html" id="about">About Us</a>
+                    <a href="#" id="projects">Projects</a>
+                    <a href="contact.html" id="contact">Contact</a>
+                  </div>
+    </h1><br>
+    </div>
+    <hr><hr style="width: 70%;">
+    <!--sticky too at starting of content-->
+    <div id="first">
+        <a class="too" href="index.html">Home</a>
+        <a  class="too" href="">Our Services ︾</a>
+        <a class="too" href="newjob.html">New job</a>
+        </div>
+
+        <div id="main">
+          <h1 class="bhi">Medical Services</h1>
+          <p>SAR Medical provides solutions to doctors, patients and nurses. <br>
+            Being a leading Medical Devices provider in almost every segment, 
+            what sets it apart is its constant focus on innovation. 
+            It offers an extensive range of high technology medical and surgical equipment, devices and services. 
+            The business is organized into franchises to focus on target customers and better service.</p>
+
+            <img src="medical bg.gif" style="width: 100%;">
+            <!--start-->
+            <button class="Btn" onclick="fn('Surgery', this, 'orange')" id="default">Surgery</button>
+            <button class="Btn" onclick="fn('Orthopaedics', this, 'orange')">Orthopaedics</button>
+            <button class="Btn" onclick="fn('Cardiovascular', this, 'orange')">Cardiovascular</button>
+    <!--Surgery-->
+          <div id="Surgery" class="same">
+            
+           <div class="part">
+             <h2 class="data">Bariatric and Metabolic Surgery</h2>
+             <img src="https://images.pexels.com/photos/7088491/pexels-photo-7088491.jpeg" class="pic">
+               <p class="comment">Ethicon develops minimally invasive surgical equipment used in 
+                 sleeve gastrectomy and gastric bypass procedures that can help people 
+                 conquer morbid obesity and help address other metabolic diseases.</p>
+           </div><hr style="color: sandybrown;width: 29%;">
+
+           <div class="part">
+            <h2 class="data">General Surgery & Gynecology</h2>
+              <p class="comment">Routinely performed procedures like removal of appendix or gall bladder and gynecological procedures 
+                like hysterectomy can be accomplished through the minimally invasive technique using Ethicon’s range of energy 
+                devices which cause minimal damage to the tissue and lead to faster recovery.</p>
+                <img src="https://images.pexels.com/photos/3376799/pexels-photo-3376799.jpeg" class="pic">
+          </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+
+          <div class="part">
+            <h2 class="data">Wound Closure</h2>
+            <img src="https://images.pexels.com/photos/5721554/pexels-photo-5721554.jpeg" class="pic">
+              <p class="comment">Every type of tissue, whether skin, fascia or organ, has its own specialized function and needs. 
+                Our Ethicon Wound Closure Portfolio including sutures and topical skin adhesives lets surgeons match the specific wound healing needs of each tissue type to the appropriate closure device, 
+                giving surgeons and patients the right solutions for the right procedures.</p>
+          </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+
+          <div class="part">
+            <h2 class="data">Hernia Repair</h2>
+              <p class="comment">Ethicon’s commitment to advancing hernia repair is reflected in our ongoing investments in evidence, 
+                innovative products, and best-in-class professional education.</p>
+                <img src="https://images.pexels.com/photos/7195382/pexels-photo-7195382.jpeg" class="pic">
+          </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+
+          <div class="part">
+            <h2 class="data">Cancer Surgery</h2>
+            <img src="https://images.pexels.com/photos/7659777/pexels-photo-7659777.jpeg" class="pic">
+              <p class="comment">Cancers of Stomach, Liver, Colon & Rectum, Esophagus, Lung, Head & Neck, Breast etc. 
+                are treated surgically using Ethicon products. Cancer surgeons use Ethicon’s precise devices to perform these complex procedures 
+                by traditional or minimally invasive approach leading to positive outcomes for the patients.</p>
+          </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+
+          <div class="part">
+            <h2 class="data">Bleeding Management</h2>
+              <p class="comment">Biosurgery is an area dedicated to aid in surgery by focusing on an array of technologies to minimize intra- and post-operative complications. Solutions comprise innovative, biologically 
+                based products for surgical conditions that are often difficult or expensive to manage.</p>
+                <img src="https://images.pexels.com/photos/4239075/pexels-photo-4239075.jpeg" class="pic">
+          </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+
+          </div>
+
+      <!--Ortho-->
+          <div id="Orthopaedics" class="same">
+           <p>The Orthopaedics business of DePuy Synthes comprises Knee and Hip Reconstruction, Trauma, Spine, sports Medicine and
+              Power Tools categories. It provides comprehensive solutions for advanced surgical intervention associated with the treatment of 
+              orthopedic disabilities, disease profiles & trauma care. Collectively, these businesses are focused on equipping 
+             surgeons with well-researched products, state-of-the-art instrumentation & advance procedure-product education.</p> 
+
+             <div class="part">
+              <h2 class="data">DePuy Synthes Joint Reconstruction</h2>
+              <img src="https://images.pexels.com/photos/3756616/pexels-photo-3756616.jpeg" class="pic">
+                <p class="comment">A global leader in joint replacement with a comprehensive portfolio of hip, knee and shoulder replacements, 
+                  operating room products and bone cement and accessories.</p>
+            </div><hr style="color: sandybrown;width: 29%;">
+ 
+            <div class="part">
+             <h2 class="data">DePuy Synthes Trauma</h2>
+               <p class="comment">The global leader in medical devices used to treat orthopaedic trauma. 
+                 The company's fixation products, including screws, plates, nails and other implants, 
+                 are used to treat fractures and deformities related to the extremities and pelvis.</p>
+                 <img src="https://images.pexels.com/photos/4506205/pexels-photo-4506205.jpeg" class="pic">
+           </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+ 
+           <div class="part">
+             <h2 class="data">DePuy Synthes Power Tools</h2>
+             <img src="https://images.pexels.com/photos/7723513/pexels-photo-7723513.jpeg" class="pic">
+               <p class="comment">Offers a comprehensive range of air, electric and battery-driven systems and associated dissections tools. 
+                 Synthes offers products in three main areas: Large Bone, Small Bone and High Speed.</p>
+           </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+ 
+           <div class="part">
+             <h2 class="data">DePuy Synthes Spine</h2>
+               <p class="comment">Offering one of the most comprehensive portfolios of spinal care solutions, treatment options are available in key areas
+                  including thoracolumbar, cervical, aging spine, interbody fusion and arthroplasty.</p>
+                 <img src="https://images.pexels.com/photos/4226205/pexels-photo-4226205.jpeg" class="pic">
+           </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+ 
+           <div class="part">
+             <h2 class="data">Codman Neuro</h2>
+             <img src="https://images.pexels.com/photos/4792509/pexels-photo-4792509.jpeg" class="pic">
+               <p class="comment">We offer a broad portfolio of devices for hydrocephalus management, neuro intensive care 
+                 and cranial surgery, as well as aneurysm coils, vascular reconstruction
+                  devices and other technologies used in the endovascular treatment of cerebral aneurysms and stroke.</p>
+           </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+ 
+           <div class="part">
+             <h2 class="data">DePuy Synthes Mitek Sports Medicine</h2>
+               <p class="comment">A global leader in orthopaedic sports medicine devices and products used in the treatment of 
+                 traumatic and degenerative soft tissue pathologies and joint injuries related to sports and physical activity.</p>
+                 <img src="https://images.pexels.com/photos/1199590/pexels-photo-1199590.jpeg" class="pic">
+           </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+
+           <div class="part">
+            <h2 class="data">DePuy Synthes CMF</h2>
+            <img src="https://www.mensjournal.com/wp-content/uploads/mf/why-does-my-knee-crack-main.jpg?w=1200&h=630&crop=1&quality=86&strip=all" class="pic">
+              <p class="comment">A global leader in cranio-maxillofacial devices, offering a comprehensive portfolio of products 
+                for surgeons to treat patients who have sustained conditions affecting their face, head, neck and thorax.</p>
+          </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+          </div>
+    <!--cardio-->
+          <div id="Cardiovascular" class="same">
+
+            <div class="part">
+              <h2 class="data">Cardiovascular Disease</h2>
+                <p class="comment">Good health depends on blood flowing freely through the entire body. When the heart or blood vessels are not functioning normally, 
+                  doctors can use tools from Biosense Webster & Ethicon to bring patients back to good health.</p>
+                  <img src="https://images.pexels.com/photos/7659570/pexels-photo-7659570.jpeg" class="pic">
+            </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+  
+            <div class="part">
+              <h2 class="data">Arrhythmias</h2>
+              <img src="https://images.pexels.com/photos/3802075/pexels-photo-3802075.jpeg" class="pic">
+                <p class="comment">To treat patients with irregular heartbeats, hospitals and teaching institutions rely on advanced diagnostic,
+                   therapeutic and mapping tools from Biosense Webster.</p>
+            </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+  
+            <div class="part">
+              <h2 class="data">Infection Prevention</h2>
+                <p class="comment">The Advanced Sterilization Products portfolio enhances patient care by preventing infections in hospitals. This encompasses adopting a trusted role in Operating Rooms, Intensive Care Units, Central Sterile Supplies Departments and 
+                  Endoscopy units, and by offering a wide range of innovative sterilization and disinfection products.</p>
+                  <img src="https://images.pexels.com/photos/5327584/pexels-photo-5327584.jpeg" class="pic">
+            </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+  
+            <div class="part">
+              <h2 class="data">Diabetes Care</h2>
+              <img src="https://images.pexels.com/photos/1001897/pexels-photo-1001897.jpeg" class="pic">
+                <p class="comment">Managing diabetes effectively means a healthier, happier life. Designed with ongoing 
+                  input from patients, products from One Touch® help in monitoring of blood glucose levels. This can help patients manage their diabetes. One Touch® helps patients 
+                  stay healthy and upgrade their quality of life with One Touch® blood glucose monitors and testing strips.</p>
+            </div><hr style="color: sandybrown;width: 29%;text-align: center;">
+          </div>
+        </div>
+    
+    <!--script in main-->
+    <script>
+      function fn(Disease,el,color) {
+        var i, same, Btns;
+        same = document.getElementsByClassName("same");
+        for (i = 0; i < same.length; i++) {
+          same[i].style.display = "none";
+        }
+        
+        Btns = document.getElementsByClassName("Btn");
+        for (i = 0; i < Btns.length; i++) {
+          Btns[i].style.backgroundColor = "";
+        }
+        
+        document.getElementById(Disease).style.display = "block";
+        el.style.backgroundColor = color;
+      
+      }
+      // Get the element with id="default" and click on it
+      document.getElementById("default").click();
+      </script>
+
+      <!--Padder part-->
+  <div class="padder">
+    <div class="pa">
+      <h2 style="border-bottom: 2px solid rgb(250,135,135);padding: 20px;">Address</h2>
+    <p style="padding: 5px;line-height: 25px;">SAR Goup Private Limited<br>
+      Koi Nagar,Garh road,<br>
+      City(Direction)<br>
+      District - PIN Code</p>
+      </div>
+    <div class="pa">
+      <h2 style="border-bottom: 2px solid rgb(250,135,135);padding: 20px;">Explore Us</h2>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>About SAR</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Investor</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Carrers</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Media Room</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Business Area</a>
+    </div>
+    <hr width="80%">
+    <div class="padder"><p style="margin-left: 10%;">Copyright©2021 SAR.All rights reserved.</p></div>
+
+
+     <!--code for upward button-->
+<button onclick="up()" id="upward" title="Go upward">⇪</button>
+
+<script>
+  var es = document.getElementById("upward");
+  
+  window.onscroll = function() {scroll()};
+  
+  function scroll() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      es.style.display = "block";
+    } else {
+      es.style.display = "none";
+    }
+  }
+  
+  function up() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+</body>
+</html>

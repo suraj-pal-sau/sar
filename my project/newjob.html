@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAR- group of trust</title>
+
+    <link rel="stylesheet" href="index.css">
+  <style>
+      #job{
+          height: 600px;
+          background-image:url("background.jpg");
+        background-size: cover;
+font-size: 25px;
+color: rgb(0, 0, 0);
+          
+      }
+  </style>
+    
+</head>
+
+<!--body part start from here-->
+<body>
+    <div class="div1">
+        <h1><img class="img1"src="logo.png" alt="logo" height="100px"width="auto"><!--logo-->
+            <!--Name of company-->
+            <u class="me"style="color:white;"><span style="color:slateblue;font-size:50px;">S</span>uraj <span style="color:slateblue;font-size:50px;">A</span>jay 
+                <span style="color: slateblue;font-size: 50px;">R</span>aj group</u>
+                <!--side too-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="aboutus.html" id="about">About us</a>
+                    <a href="#" id="projects">Projects</a>
+                    <a href="contact.html" id="contact">Contact</a>
+                  </div>
+    </h1><br>
+    </div>
+    <hr><hr style="width: 70%;">
+     <!--sticky too at starting of content-->
+     <div id="first">
+        <a class="too" href="index.html">Home</a>
+        <a class="too" href="">Our Services ︾</a>
+        <a class="too" href="newjob.html">New job</a>
+        <div class="job">
+            
+        </div>
+        <div id="job">
+        <h1 style="text-decoration: underline;text-align: center;">NEW JOB APPLY</h1>
+    
+        <center>
+        <form action="display.html" method="POST" >
+    <table cellpadding="10">
+<tr>
+<td>First name:</td>
+<td> <input type="text" id="fname" name="fname" placeholder="first name"></td>
+
+</tr>
+<tr>
+    <td>Last name:</td>
+    <td> <input type="text" id="lname" name="lname" placeholder="last name"></td>
+    
+    </tr>
+    <tr>
+        <td>Date of birth</td>
+        <td> <input type="date" name="date" min></td>
+    </tr>
+
+    <tr>
+        <td>Email:</td>
+        <td> <input type="email" id="email" name="email" ></td>
+        </tr>
+
+<tr>
+    <td>MOBILE NUMBER:</td>
+    <td><input type="10 digit number" name="phone_no" placeholder="mobile number"></td>
+</tr>
+<tr> <td>GENDER:</td>
+    <td><input type="radio" name="gender" value="male">male
+         <input type="radio" name="gender" value="female">female
+         <input type="radio" name="gender" value="other">other
+    </td>
+     
+</tr>
+<tr>
+    <td>ADDRESS:</td>
+    <td> <textarea name="address" id="address" cols="60" rows="5"></textarea></td>
+</tr>
+<tr>
+    <td>UPLOAD YOUR RESUME</td>
+    <td><input type="file" id="myFile" name="filename"></td>
+</tr>
+<tr>
+    <td style="text-align: center;" colspan="2"><button type="button" onclick='document.getElementById("job").innerHTML = "YOUR FORM HAS BEEN SUBMITTED WE WILL CONTACT YOU SOON"'>SUBMIT</button> </td>
+</tr>
+   </table>
+</form>
+</center>
+</div>
+</body>
+</html>
+                

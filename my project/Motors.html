@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SAR- group of trust</title>
+    <style>
+.div1 {
+    padding: 1px;
+    background-image: url('head\ wallpaper\ 2.jpg');
+  }
+
+  .img1 {
+    float: left;
+    height: 100px;
+    width: 200px;
+  }
+
+
+  .me {
+    height: 90px;
+    margin-left: 50px;
+  }
+
+  u {
+    animation: me 5s infinite 0 1000000000000 reverse fill-mode;
+  }
+
+  u:hover {
+    height: 200px;
+  }
+
+  @keyframes me {
+    from {
+      right: 0px
+    }
+
+    to {
+      left: 300px
+    }
+  }
+
+
+  /*style for side menu in heading part*/
+  #mySidenav a {
+    position: absolute;
+    right: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    height: 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px 0 0 2px;
+    opacity: 0.3;
+  }
+
+  #mySidenav a:hover {
+    right: 0;
+    opacity: 1;
+  }
+
+  #about {
+    top: 10px;
+    background-color: #04AA6D;
+    text-align: right;
+  }
+
+
+  #projects {
+    top: 50px;
+    background-color: #f44336;
+    text-align: right;
+    display: inline;
+  }
+
+  #contact {
+    top: 90px;
+    background-color: #555;
+    text-align: right;
+  }
+
+  #first {
+    text-align: center;
+    background-color: #282A35 !important;
+    width:100%;
+    background-image: url('motors\ bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 470px;
+  }
+
+  .too {
+    padding: 15px;
+    font-size: 20px;
+    opacity: 0.7;
+    color: rgb(44, 27, 44);
+    position:sticky;
+    text-decoration: none;
+  }
+
+  .too:hover {
+    opacity: 1;
+    color: rgb(19, 29, 46);
+    border-bottom: 4px solid rgb(8, 90, 0);
+    font-weight: bolder;
+  }
+
+  /*styling */
+  .heading{
+      color: red;
+      border: 2px solid red;
+      width: fit-content;
+      padding: 10px;
+  }
+
+  .heading:hover{
+      background-color: red;
+      color: rgb(255, 255, 255);
+      border: 2px solid rgb(248, 244, 0);
+  }
+
+  .part{
+      width: 23%;
+      padding: 2px;
+      display: inline-block;
+      margin-bottom: 18px;
+      height: 250px;
+  }
+
+  .lin{
+      text-decoration: none;
+  }
+  .lin:hover{
+      color: teal;
+  }
+  
+  #bg1{
+    background-image: url('https://wallpaper-house.com/data/out/11/wallpaper2you_471214.jpg');
+    height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #bg2{
+    background-image: url('https://wallpaper-house.com/data/out/11/wallpaper2you_471149.jpg');
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #bg3{
+    background-image: url('https://wallpaper-house.com/data/out/11/wallpaper2you_471164.jpg');
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 400px;
+  }
+  #bg4{
+    background-image: url('https://wallpaper-house.com/data/out/11/wallpaper2you_471170.jpg');
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 610px;
+  }
+  #bg5{
+    background-image: url('https://wallpaper-house.com/data/out/11/wallpaper2you_471182.jpg');
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 860px;
+  }
+  #bg6{
+    background-image: url('https://cdn.bmwblog.com/wp-content/uploads/2020/04/The-All-New-BMW-X3-M-Competition-AU-Model-13.jpg');
+    height: 350px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 360px;
+  }
+
+  /* style for upward button*/
+#upward {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  opacity: 0.5;
+  background-color: red;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  transform: scale(0.6);
+}
+
+#upward:hover {
+  background-color: #555;
+  transform:scale(1.2);
+  opacity: 1;
+}
+
+/*Padder part*/
+.padder{
+  background-color: #565f07;
+  color:cornsilk;
+  display: inline-block;
+  height:100%;
+  width: 100%;
+}
+
+.pa{
+  width: 30%;
+  margin-left: 10%;
+  padding: 10px;
+  float: left;
+}
+.aya{
+  width: 40%;
+  text-decoration: none;
+  color: aliceblue;
+  float: left;
+  padding: 5px;
+}
+
+.aya:hover{
+  color: bisque;
+}
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1><img class="img1"src="logo.png" alt="logo" height="100px"width="auto"><!--logo-->
+            <!--Name of company-->
+            <u class="me"style="color:white;"><span style="color:slateblue;font-size:50px;">S</span>uraj <span style="color:slateblue;font-size:50px;">A</span>jay 
+                <span style="color: slateblue;font-size: 50px;">R</span>aj group</u>
+                <!--side too-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="aboutus.html" id="about">Abou Us</a>
+                    <a href="#" id="projects">Projects</a>
+                    <a href="contact.html" id="contact">Contact</a>
+                  </div>
+    </h1><br>
+    </div>
+    <hr><hr style="width: 70%;">
+     <!--sticky too at starting of content-->
+     <div id="first">
+        <a class="too" href="index.html">Home</a>
+        <a  class="too" href="">Our Services ︾</a>
+        <a class="too" href="newjob.html">New job</a>
+        </div>
+
+        <div id="bg1"></div>
+
+        <div>
+            <h1 class="heading">Series</h1>
+
+            <h2 style="font-family: Jazz LET, fantasy;">2.</h2>
+            <div class="part">
+                <img src="https://img2.pngio.com/bmw-2-series-overview-new-vehicles-bmw-uk-bmw-2-series-png-890_501.png" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">The new BMW 2 Series <br>Gran Coupe</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+                </a>
+            </div>
+
+            <h2 style="font-family: Jazz LET, fantasy;">3.</h2>
+            <div class="part" style="float: left;">
+                <img src="https://cache.bmwusa.com/cosy.arox?pov=walkaround&brand=WBBM&vehicle=213O&client=byoc&paint=P0300&fabric=FKCSW&sa=S01T4,S0255,S02TB,S0302,S03MB,S0403,S0430,S0431,S0459,S0465,S0481,S0493,S04KC,S0534,S0544,S05A4,S05AC,S05AV,S0676,S06AC,S06AK,S06C4,S06U3,S0775,S07AC&date=20210629&angle=30" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> BMW 3 Series </h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+                </a>
+            </div>
+            <div class="part" style="float: left;">
+                <img src="https://imgd.aeplcdn.com/0x0/n/cw/ec/52639/3-series-gran-limousine-exterior-left-front-three-quarter-2.jpeg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">The new BMW 3 Series<br> Gran Limousine </h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+                </a>
+            </div>
+            <div class="part" style="float: left;">
+                <img src="https://images.hgmsites.net/hug/bmw-3-series_100679018_h.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">The new BMW 3 Series<br>M340i xDrive Sedan</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+                </a>
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <h2 style="font-family: Jazz LET, fantasy;">5.</h2>
+            <div class="part">
+                <img src="http://xdesktopwallpapers.com/wp-content/uploads/2012/02/BMW%20ActiveHybrid%205%20In%20Blue%20N%20White%20Background.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW 5 Series Sedan</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+                </a>
+            </div>
+
+            <!--an bg img-->
+            <div id="bg2"></div>
+
+            <div class="part" style="float: left;">
+                <h2 style="font-family: Jazz LET, fantasy;">6.</h2>
+                <img src="https://imgd.aeplcdn.com/0x0/n/i0klc4a_1515133.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW 6 Series<br>Gran Turismo</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+                </a>
+            </div>
+
+            <div class="part" style="float: left;">
+                <h2 style="font-family: Jazz LET, fantasy;">7.</h2>
+                <img src="https://wallpaperaccess.com/full/2451550.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW 7 Series Sedan<br></h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+                </a>
+            </div>
+
+            <div class="part" style="float: left;">
+                <h2 style="font-family: Jazz LET, fantasy;">8.</h2>
+                <img src="https://www.bmw.com.ph/content/dam/bmw/common/all-models/8-series/gran-coupe/2019/inspire/bmw-8series-gran-coupe-inspire-gallery-wallpaper-06.jpg.asset.1566829400111.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW 8 Series<br>Gran Coupe</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+                </a>
+            </div>
+
+            <!--Another bg img-->
+            <div id="bg3"></div>
+            
+            <h2 style="font-family: Jazz LET, fantasy;">X</h2>
+            <div class="part" style="float: left;">
+                <img src="https://images.hgmsites.net/lrg/2019-bmw-x1-xdrive28i-sports-activity-vehicle-angular-front-exterior-view_100686621_l.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW X1</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div>
+            <div class="part" style="float: left;">
+                <img src="https://images.hgmsites.net/lrg/2021-bmw-x3-m40i-sports-activity-vehicle-angular-front-exterior-view_100778811_l.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW X3</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div>
+            <div class="part" style="float: left;">
+                <img src="https://images.financialexpress.com/2018/05/bmw-x4-2018.png" style="width: 70%;height:160px;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW X4</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div>
+            <div class="part" style="float: left;">
+                <img src="https://images5.alphacoders.com/100/1003630.jpg" style="width: 70%;height: 160px;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW X5</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div><div class="part" style="float: left;">
+                <img src="https://www.wallpaperup.com/uploads/wallpapers/2015/11/28/844352/9b35789f4501178c049fb18bd63f7ade-700.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW X6</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div><div class="part" style="float: left;">
+                <img src="https://images.dealer.com/ddc/vehicles/2021/BMW/X7/SUV/still/front-left/front-left-640-en_US.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW X7</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div>
+
+            <!--another bg img-->
+            <div id="bg4"></div>
+
+            <h2 style="font-family: Jazz LET, fantasy;">M</h2>
+            <div class="part" style="float: left;">
+                <img src="https://www.pngitem.com/pimgs/m/536-5366483_bmw-m2-coupe-2018-bmw-m2-hd-png.png" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW M2 Competition</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div>
+            <div class="part" style="float: left;">
+                <img src="https://images.carexpert.com.au/crop/800/500/vehicles/source-g/a/8/a87a5125.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW M5 Competition</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div>
+            <div class="part" style="float: left;">
+                <img src="https://images.jdmagicbox.com/quickquotes/images_main/7_series_m760li_xdrive_v12_excellence_alpine_white_152844687452133600.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW M760Li</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div>
+            <div class="part" style="float: left;">
+                <img src="https://png.pngitem.com/pimgs/s/527-5277775_bmw-z4-sport-bmw-oxide-grey-metallic-hd.png" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW Z4 M40i</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div>
+            <div class="part" style="float: left;">
+                <img src="https://www.drivespark.com/img/2020/05/bmw-m8-coupe-front-view-1588923824.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW M8 Coupe</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div>
+            <div class="part" style="float: left;">
+                <img src="https://stimg.cardekho.com/images/car-images/large/BMW/X3-M/8120/1604478350585/221_Silver_757574.jpg?tr=w-375" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">The new BMW X3 M</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div>
+            <div class="part" style="float: left;">
+              <img src="https://www.carz4sale.in/pictures/default/bmw-x5-m-competition-at/bmw-x5-m-competition-at-640.jpg" style="width: 70%;">
+              <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">The new BMW X5 M <br>Competition</h2>
+              <a href="" class="lin">↣Configure & Price </a><br>
+              <a href="" class="lin">↣Search and Buy Online</a><br>
+              <a href="" class="lin">↣Show More</a>
+          </div>
+          <div class="part" style="float: left;">
+            <img src="https://imgd.aeplcdn.com/1056x594/n/dhk08sa_1467913.jpg?q=85" style="width: 70%;">
+            <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"> BMW X7 M50d</h2>
+            <a href="" class="lin">↣Configure & Price </a><br>
+            <a href="" class="lin">↣Search and Buy Online</a><br>
+            <a href="" class="lin">↣Show More</a>
+        </div>
+        <div class="part" style="float: left;">
+          <img src="https://imageonthefly.autodatadirect.com/images/?USER=eDealer&PW=edealer872&IMG=USD00BMC891A022001.jpg&width=350&height=225" style="width: 70%;">
+          <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">The new BMW 3 Series<br>M340i xDrive Sedan</h2>
+          <a href="" class="lin">↣Configure & Price </a><br>
+          <a href="" class="lin">↣Search and Buy Online</a><br>
+          <a href="" class="lin">↣Show More</a>
+      </div>
+
+      <!--another bg img-->
+      <div id="bg5"></div>
+
+      <h2 style="font-family: Jazz LET, fantasy;">z</h2>
+            <div class="part" style="float: left;">
+                <img src="https://cdn.autoportal.com/img/new-cars-gallery/bmw/z4/exterior/b278b765/bmw-z4-b278b765-500x375.jpg" style="width: 70%;">
+                <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">BMW Z4 Roadstar</h2>
+                <a href="" class="lin">↣Configure & Price </a><br>
+                <a href="" class="lin">↣Search and Buy Online</a><br>
+                <a href="" class="lin">↣Show More</a>
+            </div>
+
+            <!--another bg img-->
+            <div id="bg6"></div>
+        </div>
+
+        <!--Padder part-->
+  <div class="padder">
+    <div class="pa">
+      <h2 style="border-bottom: 2px solid rgb(250,135,135);padding: 20px;">Address</h2>
+    <p style="padding: 5px;line-height: 25px;">SAR Goup Private Limited<br>
+      Koi Nagar,Garh road,<br>
+      City(Direction)<br>
+      District - PIN Code</p>
+      </div>
+    <div class="pa">
+      <h2 style="border-bottom: 2px solid rgb(250,135,135);padding: 20px;">Explore Us</h2>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>About SAR</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Investor</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Carrers</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Media Room</a>
+      <a href="" class="aya"><span style="color: rgb(250, 135, 135);">» </span>Business Area</a>
+    </div>
+    <hr width="80%">
+    <div class="padder"><p style="margin-left: 10%;">Copyright©2021 SAR.All rights reserved.</p></div>
+
+
+        <!--code for upward button-->
+<button onclick="up()" id="upward" title="Go upward">⇪</button>
+
+<script>
+  var es = document.getElementById("upward");
+  
+  window.onscroll = function() {scroll()};
+  
+  function scroll() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      es.style.display = "block";
+    } else {
+      es.style.display = "none";
+    }
+  }
+  
+  function up() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+    
+    </body>
+</html>
